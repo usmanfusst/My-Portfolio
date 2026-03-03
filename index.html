@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Usman - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Font for professional look -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Custom CSS for Red and Black Gradient Theme -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: linear-gradient(135deg, #FF4E50, #000000);
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+            opacity: 0;
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 40px;
+            color: #333;
+            font-weight: 500;
+            opacity: 0;
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        .card {
+            margin-bottom: 20px;
+            border: none;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-body {
+            padding: 30px;
+        }
+
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Scroll Animations */
+        .fade-section {
+            opacity: 0;
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        .fade-section:nth-child(odd) {
+            animation-delay: 0.3s;
+        }
+
+        .fade-section:nth-child(even) {
+            animation-delay: 0.6s;
+        }
+
+        /* Image and Text Alignment */
+        .about-section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .about-section img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 50%;
+            margin-right: 30px;
+        }
+
+        .about-section .text {
+            flex: 1;
+            font-size: 1.1rem;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Muhammad Usman</h1>
+            <p>Graphic Designer & Video Production Specialist</p>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section class="container fade-section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-section">
+            <img src="images/img.png" alt="Muhammad Usman" class="img-fluid rounded-circle">
+            <div class="text">
+                <p>I am Muhammad Usman, a passionate and result-oriented Graphic Designer with over 5 years of experience in visual storytelling, video production, and photography. I am committed to delivering impactful designs and creating visually compelling content that resonates with my clients' goals and objectives.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="container fade-section">
+        <h2 class="section-title">Experience</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Amfah Soft</h5>
+                        <p class="card-text">Led creative projects, collaborated with cross-functional teams, and exceeded client expectations through innovative design solutions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Mars BPO</h5>
+                        <p class="card-text">Contributed to the design team, creating visually compelling materials and executing design projects under tight deadlines.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="container fade-section">
+        <h2 class="section-title">Skills</h2>
+        <ul>
+            <li>Graphic Design (Adobe Photoshop, Illustrator)</li>
+            <li>Video Editing (Adobe Premiere Pro, After Effects)</li>
+            <li>Photography & Cinematic Videography</li>
+            <li>Creative Direction & Project Management</li>
+        </ul>
+    </section>
+
+    <!-- Education Section -->
+    <section class="container fade-section">
+        <h2 class="section-title">Education</h2>
+        <p><strong>FSC (Pre Medical)</strong> - Army Public School & College Ord Road Rawalpindi, Pakistan</p>
+        <p><strong>Bachelor of Science (IT)</strong> - Foundation University Rawalpindi City, Pakistan (Expected Graduation: 2028)</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 Muhammad Usman. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
